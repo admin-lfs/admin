@@ -25,6 +25,7 @@ import {
   LogOut,
   Settings,
   Menu,
+  Calendar,
 } from "lucide-react";
 import { Button } from "../components/ui/button";
 
@@ -82,6 +83,11 @@ const AdminSidebar = ({ children, activePage, onPageChange }) => {
       title: "Fees Collection",
       icon: CreditCard,
       page: "fees",
+    },
+    {
+      title: "Timetable",
+      icon: Calendar,
+      page: "timetable",
     },
   ];
 
