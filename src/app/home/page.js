@@ -7,7 +7,6 @@ import GeneralPage from "../../components/pages/GeneralPage";
 import OnboardingPage from "../../components/pages/OnboardingPage";
 import AnnouncementsPage from "../../components/pages/AnnouncementsPage";
 import FeesCollectionPage from "../../components/pages/FeesCollectionPage";
-import TimetablePage from "../../components/pages/TimetablePage";
 
 export default function HomePage() {
   const [activePage, setActivePage] = useState("general");
@@ -22,8 +21,6 @@ export default function HomePage() {
         return <AnnouncementsPage />;
       case "fees":
         return <FeesCollectionPage />;
-      case "timetable":
-        return <TimetablePage />;
       default:
         return <GeneralPage />;
     }
